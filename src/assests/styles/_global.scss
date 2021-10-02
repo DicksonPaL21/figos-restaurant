@@ -1,0 +1,78 @@
+* {
+  box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -khtml-box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --theme-color: $bg-color;
+
+  /*=> screen-size > 426px <=*/
+  --lg-fs-1: 10.5pt;
+  --lg-fs-2: 9.5pt;
+  --lg-fs-3: 8.5pt;
+  --lg-fs-4: 7.5pt;
+  --lg-fs-5: 6.5pt;
+
+  /*=> screen-size < 425px <=*/
+  --md-fs-1: 10pt;
+  --md-fs-2: 9pt;
+  --md-fs-3: 8pt;
+  --md-fs-4: 7pt;
+  --md-fs-5: 6pt;
+
+  /*=> screen-size < 375px <=*/
+  --sm-fs-1: 9.5pt;
+  --sm-fs-2: 8.5pt;
+  --sm-fs-3: 7.5pt;
+  --sm-fs-4: 6.5pt;
+  --sm-fs-5: 5.5pt;
+
+  /*=> screen-size < 320px <=*/
+  --xs-fs-1: 9pt;
+  --xs-fs-2: 8pt;
+  --xs-fs-3: 7pt;
+  --xs-fs-4: 6pt;
+  --xs-fs-5: 5pt;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #28282e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4b4b54;
+
+  &:hover {
+    background-color: #51515a;
+  }
+
+  &:active,
+  &:disabled {
+    background-color: #1b1b21;
+  }
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}

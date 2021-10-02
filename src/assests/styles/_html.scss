@@ -1,0 +1,149 @@
+html {
+  text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -khtml-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-user-select: none !important;
+  -khtml-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  -o-user-select: none !important;
+  user-select: none !important;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.title {
+  color: $white;
+}
+
+.description {
+  color: $light-grey;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+// colors
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+}
+// end colors
+
+// container max width
+@each $name, $mw in $container-max-widths {
+  .mw-#{$name} {
+    max-width: $mw;
+    margin: auto;
+  }
+}
+// end container max width
+
+// margins
+@each $name, $mt in $sizes {
+  .mt-#{$name} {
+    margin-top: $mt;
+  }
+}
+
+@each $name, $mr in $sizes {
+  .mr-#{$name} {
+    margin-right: $mr;
+  }
+}
+
+@each $name, $mb in $sizes {
+  .mb-#{$name} {
+    margin-bottom: $mb;
+  }
+}
+
+@each $name, $ml in $sizes {
+  .ml-#{$name} {
+    margin-left: $ml;
+  }
+}
+
+@each $name, $mx in $sizes {
+  .mx-#{$name} {
+    margin-left: $mx;
+    margin-right: $mx;
+  }
+}
+
+@each $name, $my in $sizes {
+  .my-#{$name} {
+    margin-top: $my;
+    margin-bottom: $my;
+  }
+}
+
+@each $name, $m in $sizes {
+  .m-#{$name} {
+    margin: $m;
+  }
+}
+// end margins
+
+// padding
+@each $name, $pt in $sizes {
+  .pt-#{$name} {
+    padding-top: $pt;
+  }
+}
+
+@each $name, $pr in $sizes {
+  .pr-#{$name} {
+    padding-right: $pr;
+  }
+}
+
+@each $name, $pb in $sizes {
+  .pb-#{$name} {
+    padding-bottom: $pb;
+  }
+}
+
+@each $name, $pl in $sizes {
+  .pl-#{$name} {
+    padding-left: $pl;
+  }
+}
+
+@each $name, $px in $sizes {
+  .px-#{$name} {
+    padding-left: $px;
+    padding-right: $px;
+  }
+}
+
+@each $name, $py in $sizes {
+  .py-#{$name} {
+    padding-top: $py;
+    padding-bottom: $py;
+  }
+}
+
+@each $name, $p in $sizes {
+  .p-#{$name} {
+    padding: $p;
+  }
+}
+// end padding

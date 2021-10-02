@@ -1,0 +1,14 @@
+.jumbotron {
+  & > .title {
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
+  }
+
+  & > .description {
+    font-size: clamp(0.7rem, 1vw, 2rem);
+  }
+
+  & > .btn {
+    font-size: calc(var(--lg-fs-1) * 1.25);
+    margin-right: 12px;
+  }
+}

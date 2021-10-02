@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+$primaryColor:#f90413;
+$secondaryColor:#ffb902;
+$optionalColor:#4ac188;
+$mainfont:'Poppins',
+sans-serif;
+
+* {
+//    border:1px solid red;
+}
+@media(max-width:319px){
+    .featuredMenu {
+        width: 250px;
+        height: auto;
+
+    }
+
+    .header-component {
+        height: auto;
+        width: 100%;
+        background-color: #1d1d1d;
+        position: relative;
+        z-index: -2;
+    }
+
+    .header-con {
+        width: 100%;
+        height: 350px;
+        padding: 20px;
+    }
+
+    .header-con:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 !important;
+    }
+
+    .header-con h1 {
+        width: 100%;
+        color: white;
+        font-family: $mainfont;
+        font-size: 25pt;
+        margin-top: 20px;
+    }
+
+    .header-con h1 span {
+        color: $primaryColor;
+        font-family: $mainfont;
+    }
+
+    .btnheader {
+        font-size: 12pt;
+    }
+
+    .header-con p {
+        color: white;
+        font-family: $mainfont;
+
+        font-size: 12pt;
+        opacity: 0.8;
+    }
+
+    .headerbtn-con {
+        display: flex;
+        align-items: center;
+        justify-content: flex start;
+        width: 100%;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .headerbtn-con p {
+        color: $secondaryColor;
+        font-family: $mainfont;
+    }
+
+    .headerbtn-con p::before {
+        content: '';
+        width: 70px;
+        background-color: $secondaryColor;
+        height: 2px;
+        position: absolute;
+        bottom: 5;
+    }
+
+    .btnOrder {
+        padding: 5px;
+        height: 40px;
+        border: none;
+        width: 100px;
+        border-radius: 50px;
+        background-color: #e4283f;
+        color: white;
+        font-family: $mainfont;
+        letter-spacing: 0.5px;
+        margin-right: 15px;
+    }
+
+    .btnheader {
+        margin-top: 15px;
+    }
+}
+// smaller phone view points
+@media(min-width:320px) {
+    .featuredMenu {
+        width: 250px;
+        height: auto;
+    }
+
+    .header-component {
+        height: auto;
+        width: 100%;
+        background-color: #1d1d1d;
+        position: relative;
+        z-index: -2;
+    }
+
+    .header-con {
+        width: 100%;
+        height: 350px;
+        padding: 20px;
+    }
+
+    .header-con:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 !important;
+    }
+
+    .header-con h1 {
+        width: 100%;
+        color: white;
+        font-family: $mainfont;
+        font-size: 25pt;
+        margin-top: 20px;
+    }
+
+    .header-con h1 span {
+        color: $primaryColor;
+        font-family: $mainfont;
+    }
+
+    .btnheader {
+        font-size: 12pt;
+    }
+
+    .header-con p {
+        color: white;
+        font-family: $mainfont;
+
+        font-size: 12pt;
+        opacity: 0.8;
+    }
+
+    .headerbtn-con {
+        display: flex;
+        align-items: center;
+        justify-content: flex start;
+        width: 100%;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .headerbtn-con p {
+        color: $secondaryColor;
+        font-family: $mainfont;
+    }
+
+    .headerbtn-con p::before {
+        content: '';
+        width: 70px;
+        background-color: $secondaryColor;
+        height: 2px;
+        position: absolute;
+        bottom: 5;
+    }
+
+    .btnOrder {
+        padding: 5px;
+        height: 40px;
+        border: none;
+        width: 100px;
+        border-radius: 50px;
+        background-color: #e4283f;
+        color: white;
+        font-family: $mainfont;
+        letter-spacing: 0.5px;
+        margin-right: 15px;
+    }
+
+    .btnheader {
+        margin-top: 15px;
+    }
+
+}
+// small device and most phones
+@media(min-width:480px) {
+    .header-component {
+        height: auto;
+    }
+
+    .featuredMenu {
+        width: 300px;
+        height: auto;
+    }
+
+    .header-con {
+        padding: 30px;
+        height: auto;
+    }
+
+    .header-con h1 {
+        width: 100%;
+        font-size: 30pt;
+        padding-right: 50px;
+    }
+
+    .header-con p {
+        font-size: 15pt;
+    }
+
+    .btnOrder {
+        width: 150px;
+        height: 50px;
+    }
+
+    .headerbtn-con p::before {
+        content: '';
+        width: 94px;
+        background-color: $secondaryColor;
+        height: 2px;
+        position: absolute;
+        bottom: 5;
+    }
+}
+// most tablets
+@media(min-width:768px) {
+    .header-component {
+        height: auto;
+    }
+
+    .header-con {
+        padding: 40px;
+    }
+}
+//smaller desktop
+@media(min-width:992px) {
+    .header-component {
+        display: grid;
+        grid-template-columns: (auto auto);
+        height: 87vh;
+    }
+
+    .featuredMenu {
+        width: 100%;
+        position: relative;
+        right: 20%;
+    }
+
+    .header-con h1 {
+        margin-top: 50px;
+    }
+}
+
+//large device and wide screen
+@media(min-width:1200px) {
+    .header-component {
+        height: 86.8vh;
+    }
+
+    .featuredMenu{
+        width: 100%;
+        position: relative;
+        right: 40%;
+        
+    }
+    .header-con {
+        width: 100%;
+    }
+
+    .header-con:nth-child(1) {}
+
+    .header-con h1 {
+        width: 75%;
+        margin-left: 20px;
+        font-size: 3.5rem;
+        margin-top: 50px;
+    }
+
+    .header-con p {
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .headerbtn-con {
+        margin-left: 20px;
+        width: 350px;
+    }
+}

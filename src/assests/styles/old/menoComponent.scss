@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+$primaryColor:#f90413;
+$secondaryColor:#ffb902;
+$optionalColor:#4ac188;
+$mainfont:'Poppins',sans-serif;
+
+
+
+@media(max-width:319px){
+    .menuA-container{
+        width: 100%;
+        height: auto;
+        background-color: #101010;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows:  auto;
+        grid-gap: 10px;
+        position: relative;
+        z-index: -2;
+        
+    }
+    .menuA{
+        width: 100%;
+        height: 150px;
+      background-color: #1d1d1d;
+        position: relative;
+        border-radius: 20px;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+     
+    }
+    .menuA:nth-child(1){
+        background: none;
+        height: auto;
+        color: $secondaryColor!important;
+    }
+    .menuA h1 {
+        font-size: 10pt;
+        color: white;
+        font-family: $mainfont;
+        letter-spacing: 1px;
+        font-weight: 400;
+        position: relative;
+        left: 5%;
+    }
+    .menuA .price{
+        position: relative;
+        color: $primaryColor;
+        font-family: $mainfont;
+        font-size: 13pt;
+     
+    }
+    .circleMenu{
+        width: 70px;
+        height: 70px;
+        border:3px solid white;
+        border-radius: 50%;
+        position:absolute;
+        top: 0;
+        left: 0;
+        margin-top:-5px;
+       margin-left: -8px;
+       background-color: white;
+       animation: rotate 30s ease-in-out infinite;
+    }
+
+    @keyframes rotate{
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(180deg);
+        }
+    }
+    .orderBtn{
+        margin-top: 10px;
+        padding: 10px;
+        background-color: $primaryColor;
+        width: 120px;
+        border-radius: 8px;
+      
+    }
+    .Mone .circleMenu{
+        background-image: url('../img/menuMobile/menu1.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .Mtwo .circleMenu{
+        background-image: url('../img/menuMobile/menu2.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .Mthree .circleMenu{
+        background-image: url('../img/menuMobile/menu3.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .hideMenu{
+        display: none;
+    }
+}
+@media(min-width:320px){
+    .menuTitle{
+        font-size: 16pt;
+        text-align: center;
+        padding: 10px;
+        color: #ffb902;
+        font-family: $mainfont;
+        position: relative;
+    }
+    .menuA-container{
+        width: 100%;
+        height: auto;
+        background-color: #101010;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows:  auto;
+        grid-gap: 10px;
+        position: relative;
+        z-index: -2;
+        
+    }
+    .menuA{
+        width: 100%;
+        height: 150px;
+      background-color: #1d1d1d;
+        position: relative;
+        border-radius: 20px;
+        text-align: center;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: -2;
+    }
+    .menuA:hover{
+        background: $secondaryColor;
+    }
+    .menuA h1 {
+        font-size: 10pt;
+        color: white;
+        font-family: $mainfont;
+        letter-spacing: 1px;
+        font-weight: 400;
+        position: relative;
+        left: 5%;
+    }
+    .menuA:nth-child(1){
+        height: auto;
+        background: none;
+    }
+    .menuA:nth-child(1) h1{
+        height: auto;
+        font-size: 13pt;
+        font-family: $mainfont;
+        color: $secondaryColor;
+    }
+    .menuA .price{
+        position: relative;
+        color: $primaryColor;
+        font-family: $mainfont;
+        font-size: 13pt;
+     
+    }
+    .circleMenu{
+        width: 70px;
+        height: 70px;
+        border:3px solid white;
+        border-radius: 50%;
+        position:absolute;
+        top: 0;
+        left: 0;
+        margin-top:-5px;
+       margin-left: -8px;
+
+       animation: rotate 30s ease-in-out infinite;
+    }
+
+    @keyframes rotate{
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(180deg);
+        }
+    }
+    .orderBtn{
+        margin-top: 10px;
+        padding: 10px;
+        background-color: $primaryColor;
+        width: 120px;
+        border-radius: 8px;
+      
+    }
+    .Mone .circleMenu{
+        background-image: url('../img/menuMobile/menu1.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .Mtwo .circleMenu{
+        background-image: url('../img/menuMobile/Menu2.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .Mthree .circleMenu{
+        background-image: url('../img/menuMobile/Menu3.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .Mfour .circleMenu{
+        background-image: url('../img/menuMobile/Menu4.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .Mfive .circleMenu{
+        background-image: url('../img/menuMobile/Menu5.png');
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .hideMenu{
+        display: none;
+    }
+}
+@media(min-width:480px){
+}
+@media(min-width:768px){
+    .menuA-container{
+        width: 100%;
+        height: auto;
+        background-color: #101010;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows:  auto;
+        grid-gap: 10px;
+    }
+}
+@media(min-width:800px){
+}
+@media(min-width:992px){
+}
+@media(min-width:1200px){
+    .menuA:nth-child(1) h1 {
+        font-size: 23px;
+    }
+
+    .menuA-container{
+        width: 100%;
+        height: auto;
+        background-color: #101010;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows:  auto;
+        grid-gap: 15px;
+        position: relative;
+    }
+    .hideMenu{
+        display:flex;
+    }
+}

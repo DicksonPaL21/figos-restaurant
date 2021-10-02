@@ -1,0 +1,28 @@
+.btn {
+  padding: 14px 18px;
+  background: $red;
+  color: $white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &.btn-round {
+    border-radius: 50px;
+  }
+
+  &.btn-see-more {
+    background: transparent;
+    color: $orange;
+    border-radius: 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      bottom: 0;
+      position: absolute;
+      background: $orange;
+      width: calc(100% - 36px);
+      height: 3px;
+    }
+  }
+}
