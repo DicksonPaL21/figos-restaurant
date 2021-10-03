@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Apple",
+    "type": "fruit",
+    "price": 100
+  },
+  {
+    "name": "pizza",
+    "type": "italian",
+    "price": 370
+  },
+  {
+    "name": "Burger",
+    "type": "Mac&Cheese",
+    "price": 310
+  },
+  {
+    "name": "salad",
+    "type": "Veg",
+    "price": 50
+  },
+  {
+    "name": "Apple",
+    "type": "fruit",
+    "price": 100
+  },
+  {
+    "name": "pizza",
+    "type": "italian",
+    "price": 370
+  },
+  {
+    "name": "Burger",
+    "type": "Mac&Cheese",
+    "price": 310
+  },
+  {
+    "name": "salad",
+    "type": "Veg",
+    "price": 50
+  }
+]

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Components
-import { Button } from '../Button';
+import { Button } from '../';
 
 function Jumbotron({
   title,

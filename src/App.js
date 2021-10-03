@@ -1,14 +1,14 @@
 import React from 'react';
 
 // Components
-import { Header } from './modules/Header';
+import { Home } from './modules/scenes/Home';
 
 import './assests/styles/index.scss';
 
 function App() {
   return (
     <>
-      <Header />
+      <Home />
     </>
   );
 }

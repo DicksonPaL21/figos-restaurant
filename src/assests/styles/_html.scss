@@ -15,6 +15,10 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background: $black;
+}
+
 .float-left {
   float: left;
 }
@@ -40,21 +44,20 @@ html {
 }
 
 // colors
+// text colors
 @each $name, $color in $colors {
   .text-#{$name} {
-    color: $color;
+    color: $color !important;
+  }
+}
+
+// btn color
+@each $name, $color in $colors {
+  .btn-#{$name} {
+    background: $color !important;
   }
 }
 // end colors
-
-// container max width
-@each $name, $mw in $container-max-widths {
-  .mw-#{$name} {
-    max-width: $mw;
-    margin: auto;
-  }
-}
-// end container max width
 
 // margins
 @each $name, $mt in $sizes {
@@ -147,3 +150,47 @@ html {
   }
 }
 // end padding
+
+[class*='mw'] {
+  margin: auto;
+}
+
+@media (min-width: 1400px) {
+  .mw-lg,
+  .mw-md,
+  .mw-sm,
+  .mw-xl,
+  .mw-xxl {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mw-lg,
+  .mw-md,
+  .mw-sm,
+  .mw-xl {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mw-lg,
+  .mw-md,
+  .mw-sm {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mw-md,
+  .mw-sm {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) {
+  .mw-sm {
+    max-width: 540px;
+  }
+}
